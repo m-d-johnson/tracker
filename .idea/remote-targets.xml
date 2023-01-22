@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="WSL - Debian" type="wsl" uuid="64fedc48-dc7c-4bcb-a639-c29dd3824a59">
+        <config>
+          <option name="distributionMsId" value="Debian" />
+          <option name="projectRootOnTarget" value="/mnt/c/Users/micha/AppData/Local/JetBrains/Toolbox/apps/Goland/ch-0/223.8214.59/jbr/bin&#10;/tracker" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="goPath" value="/home/mdj/go" />
+            <option name="goRoot" value="/usr/bin/go" />
+            <option name="goVersion" value="go1.15.15 linux/amd64" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
