@@ -42,10 +42,6 @@ func main() {
 	binaryProto, err := proto.Marshal(&titan)
 	textProto, _ := prototext.Marshal(&titan)
 
-	for x in titan.Devices {
-		fmt.Print(x.),
-	}
-
 	if err != nil {
 		log.Fatalln("Failed to encode address book:", err)
 	}
