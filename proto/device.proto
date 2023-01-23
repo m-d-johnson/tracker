@@ -3,26 +3,27 @@ package devicetracker;
 import "google/protobuf/timestamp.proto";
 
 option go_package = "github.com/m-d-johnson/devicetracker";
-
-message Device {
-  string name = 1;
-  string hostname = 2;
-  string description = 3;
-  string vendor = 4;
-  string model = 5;
-
-message NetworkInterface {
-   string name = 1;
-   string mac = 2;
-   string ip = 3;
-   string media_type = 4;
-   string speed = 5;
-}
-  repeated NetworkInterface interfaces = 6;
-  google.protobuf.Timestamp last_updated = 7;
-}
-
 // Our address book file is just one of these.
 message Inventory {
+  string inventory_name = 9;
+
+  message Device {
+    string name = 1;
+    string hostname = 2;
+    string description = 3;
+    string vendor = 4;
+    string model = 5;
+    repeated NetworkInterface interfaces = 6;
+
+  message NetworkInterface {
+     string name = 1;
+     string mac = 2;
+     string ip = 3;
+     string media_type = 4;
+     string speed = 5;
+  }}
+
   repeated Device devices = 1;
+
+  google.protobuf.Timestamp last_updated = 7;
 }
