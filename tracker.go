@@ -35,14 +35,14 @@ func main() {
 	fmt.Print(titan.Interfaces[0])
 	// Write the new address book back to disk.
 	out, err := proto.Marshal(&titan)
-	text_proto, _ := prototext.Marshal(&titan)
+	textProto, _ := prototext.Marshal(&titan)
 	if err != nil {
 		log.Fatalln("Failed to encode address book:", err)
 	}
 	if err := os.WriteFile("data.bin.pb", out, 0644); err != nil {
 		log.Fatalln("Failed to write address book:", err)
 	}
-	if err := os.WriteFile("data.textproto", text_proto, 0644); err != nil {
+	if err := os.WriteFile("data.textproto", textProto, 0644); err != nil {
 		log.Fatalln("Failed to write address book:", err)
 	}
 }
