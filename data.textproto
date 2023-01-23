@@ -1,0 +1,17 @@
+name:"Desktop Computer"
+hostname:"titan"
+description:"Mike's Desktop Computer"
+model:"Custom"
+interfaces:{
+name:"Wired Ethernet"
+mac:"112233445566"
+ip:"192.168.20.8"
+media_type:"Copper"
+speed:"1000 Mbps"
+} interfaces:{
+name:"Wireless Ethernet"
+mac:"AA2233445566"
+ip:"192.168.20.9"
+media_type:"Radio"
+speed:"600 Mbps"
+}
